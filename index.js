@@ -43,7 +43,6 @@ const phoneDisplay = info => {
         // console.log(phone.slug);
         const div = document.createElement('div');
         div.className = ('col-lg-4 mt-5 mb-5 rounded-start');
-
         div.innerHTML = `
         <div class="card" style="width: 18rem;">
   <img src="${phone.image}" class="card-img-top w-75 mx-auto mt-3" alt="...">
@@ -86,6 +85,7 @@ const displayPhoneDetails = data => {
 
     const onePhone = document.getElementById('one-phone');
     const div = document.createElement('div');
+    main.innerHTML = "";
     div.classList.add('card');
     div.innerHTML = `
     
@@ -101,12 +101,5 @@ const displayPhoneDetails = data => {
 
         `;
     onePhone.appendChild(div);
-
-
-
-
-
-
-
 
 }
