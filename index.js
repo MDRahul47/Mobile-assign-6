@@ -94,8 +94,15 @@ const displayPhoneDetails = data => {
         <h5 class="card-title fw-bold">${data.name}</h5>
         <p class="card-text">${data.releaseDate}</p>
         <p class="card-title fw-bold">${data.brand}</p>
+        <p class="card-text"><span class="fw-bold">Model Name:</span>   ${data.name}</p>
+        <p class="card-text"><span class="fw-bold"> Storage: </span>    ${data.mainFeatures.storage}</p>
+        <p class="card-text"> <span class="fw-bold"> Display Size: </span>     ${data.mainFeatures.displaySize}</p>
+        <p class="card-text"><span class="fw-bold">Slug:</span> ${data.slug}</p>
+        <span class="card-text  my-2" > <span class="fw-bold"> Sensors: </span>  ${data.mainFeatures.sensors
+        }</span>
+         <p class="card-text">Others info: WLAN; ${data?.others?.WLAN || "Info will provide soon"},Bluetooth;${data?.others?.Bluetooth || "Info will provide soon"} </p>
         <p>${rate()}</p>
-        <a href="${data.chipSet}" class="btn btn-primary">Go somewhere</a>
+       
       </div>
     
 
