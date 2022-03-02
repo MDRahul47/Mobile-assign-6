@@ -26,7 +26,7 @@ const searchButton = () => {
             .then(data => phoneDisplay(data.data.slice(0, 20)))
     }
 }
-// for (const phone of info) 
+
 const phoneDisplay = info => {
     console.log(info);
     /* error handler */
@@ -40,7 +40,6 @@ const phoneDisplay = info => {
 
     info.forEach(phone => {
         document.getElementById('error').style.display = 'none'
-        // console.log(phone.slug);
         const div = document.createElement('div');
         div.className = ('col-lg-4 mt-5 mb-5 rounded-start');
         div.innerHTML = `
@@ -82,6 +81,7 @@ const displayPhoneDetails = data => {
 
 
 
+    // ----phoneDetails here----------
 
     const onePhone = document.getElementById('one-phone');
     const div = document.createElement('div');
